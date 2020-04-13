@@ -73,6 +73,12 @@ function draw() {
     fill(220);
     rect(800, 0, width-830, height);
     pop();
+    push();
+    stroke(50);
+    noFill();
+    rect(0, 0, width, height);
+    pop();
+    
     speed = speed_slider.value();
     //range = maxRange * 0.5;
     randomness = randomness_slider.value();
@@ -218,6 +224,7 @@ function drawSliderText() {
   textSize(60);
   strokeWeight(0.5);
   text("FEAR", 830, 90);
+  
 
   translate(0, 200);
   // slider text
